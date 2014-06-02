@@ -29,8 +29,10 @@ def saveResource(resource, postDict = False, changeFunction = False):
     s = json.dumps(d)
 
   basename = resource.split("?")[0]
+  if basename.find(".json") == -1
+    basename += ".json"
   if not postDict:
-    filename = config.outputFolder + resource + ".json"
+    filename = config.outputFolder + basename
   else:
     key = postDict["key"]
     filename = config.outputFolder + resource + "/" + postDict[key] + ".json"
