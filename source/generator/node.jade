@@ -1,0 +1,8 @@
+doctype html
+html
+  include header.jade
+  body
+    div(data-role="page")
+      div(data-role="header")
+        h1=node.title
+      div.ui-content(data-role="main") !{node.body.und[0].safe_value}

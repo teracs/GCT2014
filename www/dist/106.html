@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=device-dpi">
+    <link rel="stylesheet" href="../jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../jquery.mobile-1.4.2/jquery-1.11.0.min.js"></script>
+    <script src="../jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script src="../timuLoader.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1 id="nodeTitle">若每种化肥该农民都有一种，并且它们被放在5个连续的袋子中</h1>
+      </div>
+      <div data-role="main" class="ui-content"><p>若每种化肥该农民都有一种，并且它们被放在5个连续的袋子中，则下面哪一项可能正确?</p>
+
+        <form>
+          <fieldset data-role="controlgroup">
+            <legend>选项：</legend>
+            <input id="field_choice_a" type="radio" name="field_choice" value="A">
+            <label for="field_choice_a">A 只有N和w将位于这一排袋子的两端位置</label>
+            <input id="field_choice_b" type="radio" name="field_choice" value="B">
+            <label for="field_choice_b">B 与M相邻的化肥只有K和N</label>
+            <input id="field_choice_c" type="radio" name="field_choice" value="C">
+            <label for="field_choice_c">C L和W不相邻</label>
+            <input id="field_choice_d" type="radio" name="field_choice" value="D">
+            <label for="field_choice_d">D 任一个化肥都有可能放在5个袋子中的任一个袋子</label>
+          </fieldset>
+          <div data-role="collapsible">
+            <h4>查看正确答案</h4>
+            <div>
+              <p>正确答案：D</p>
+              <div>根据题干条件5种化肥可以形成这样一个邻接关系图：L的右边是W，w右边是N，N的下面是M，M的左边是K，K的上面是L。由此可见，A项、B项、C项说法均不正确；任一种化肥都可以放在开头，任一种化肥都有可能放在5个位置中的任一个位置。
+</div>
+            </div>
+          </div>
+        </form><a href="javascript:xiayiti()" class="ui-btn">下一题</a>
+        <script src="../main_danxuan.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
