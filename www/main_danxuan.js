@@ -11,7 +11,7 @@ xiayiti = function(){
     if (dijidao <= window.localStorage.currentZSDLength)
     {
         window.localStorage.currentDijidao = dijidao;
-        var nid = window.localStorage.currentNid = window.flat_term[window.localStorage.currentZid].nodes[dijidao].nid;
+        var nid = window.localStorage.currentNid = gct2014.flat[window.localStorage.currentZid].nodes[dijidao - 1].nid;
         $.mobile.changePage(nid + ".html");
     }
     else
