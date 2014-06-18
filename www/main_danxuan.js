@@ -28,7 +28,7 @@ xiayiti = function(){
 
 showAnswer = function ()
 {
-    $(".input_choice").attr("disabled","disabled");
+    $(".input_choice").disableSelection();
     var nid = window.localStorage.currentNid;
     var node = gct2014.nodes[nid];
     var correctAnswer = node.field__xuan_xiang.und[0].value;
@@ -43,6 +43,7 @@ showAnswer = function ()
     //$(this).checkboxradio( "refresh" );
 }
 
-$(document).on("click",".field_choice",showAnswer);
+//$(".input_choice").on("change",function(){showAnswer.call($(this).parent())});
+$(".input_choice").on("click",function(){showAnswer.call($(this).prev())});
 
 $(document).on("pagecontainershow",updateTitle);
