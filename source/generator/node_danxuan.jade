@@ -9,12 +9,16 @@ html
         form
           fieldset(data-role="controlgroup")
             legend 选项：
+          -if (node.field_choice_a.und)
             input#field_choice_a(type="radio",name="field_choice",value="A")
             label(for="field_choice_a") A !{node.field_choice_a.und[0].value}
+          -if (node.field_choice_b.und)
             input#field_choice_b(type="radio",name="field_choice",value="B")
             label(for="field_choice_b") B !{node.field_choice_b.und[0].value}
+          -if (node.field_choice_c.und)
             input#field_choice_c(type="radio",name="field_choice",value="C")
             label(for="field_choice_c") C !{node.field_choice_c.und[0].value}
+          -if (node.field_choice_d.und)
             input#field_choice_d(type="radio",name="field_choice",value="D")
             label(for="field_choice_d") D !{node.field_choice_d.und[0].value}
           div(data-role="collapsible")
@@ -23,4 +27,4 @@ html
               p 正确答案：!{node.field__xuan_xiang.und[0].value}
               div !{node.field_analysis.und? node.field_analysis.und[0].value: ""}
         a(href="javascript:xiayiti()",class="ui-btn") 下一题
-        script(src="../main_danxuan.js")
+      script(src="../main_danxuan.js")

@@ -1,0 +1,12 @@
+doctype html
+html
+  include header.jade
+  body
+    div(data-role="page")
+      div(data-role="header")
+        h1#nodeTitle=node.title
+      div.ui-content(data-role="main") !{node.body.und[0].safe_value}
+        form
+          div 情景题还没做好
+        a(href="javascript:xiayiti()",class="ui-btn") 下一题
+      script(src="../main_danxuan.js")

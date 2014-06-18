@@ -2,7 +2,7 @@
 if(!window.gct2014)
 {
     $.getJSON("../record/taxonomy_vocabulary/getTree/2.json", function(taxonomy_vocabulary){
-        window.gct2014 = {flat:{},nested:{}};
+        window.gct2014 = {flat:{},nested:{},nodes:{}};
         window.taxonomy_vocabulary = taxonomy_vocabulary;
         console.log("载入科目、知识点成功！数量：", taxonomy_vocabulary.length);
         //......................................................................
@@ -65,6 +65,7 @@ if(!window.gct2014)
                         );
                         gct2014.flat[km].nodes.push(node);
                         gct2014.flat[zsd].nodes.push(node);
+                        gct2014.nodes[node.nid] = node;
                     }catch(e){}
                 }).always(function(){
                         afterLoad();

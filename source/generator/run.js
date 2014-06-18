@@ -68,7 +68,10 @@ var callback_Node = function(err, res)
       {
           var node = JSON.parse(res);
       }
-      if (node.field_choice_d && node.field_choice_d.und)
+      console.log("processing nid ",node.nid);
+      if (node.type == "qing_jing_ti")
+        var html = jade.renderFile("node_qingjingti.jade",{node:node,pretty:true});
+      else if (node.type == "dan_xuan_ti")
         var html = jade.renderFile("node_danxuan.jade",{node:node,pretty:true});
       else
         var html = jade.renderFile("node.jade",{node:node,pretty:true});

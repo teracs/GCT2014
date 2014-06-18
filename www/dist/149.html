@@ -14,10 +14,31 @@
   <body>
     <div data-role="page">
       <div data-role="header">
-        <h1>38</h1>
+        <h1 id="nodeTitle">38</h1>
       </div>
       <div data-role="main" class="ui-content"><p>   </p>
+
+        <form>
+          <fieldset data-role="controlgroup">
+            <legend>选项：</legend>
+          </fieldset>
+          <input id="field_choice_a" type="radio" name="field_choice" value="A">
+          <label for="field_choice_a">A few</label>
+          <input id="field_choice_b" type="radio" name="field_choice" value="B">
+          <label for="field_choice_b">B those</label>
+          <input id="field_choice_c" type="radio" name="field_choice" value="C">
+          <label for="field_choice_c">C many</label>
+          <div data-role="collapsible">
+            <h4>查看正确答案</h4>
+            <div>
+              <p>正确答案：C</p>
+              <div><p>根据前面举出的一些例子判断，这里表示许多同类事物中的一个。故用C选项。</p>
 </div>
+            </div>
+          </div>
+        </form><a href="javascript:xiayiti()" class="ui-btn">下一题</a>
+      </div>
+      <script src="../main_danxuan.js"></script>
     </div>
   </body>
 </html>
