@@ -13,8 +13,8 @@
   </head>
   <body>
     <div data-role="page">
-      <div data-role="header">
-        <h1 id="nodeTitle">世界上最早的天文学著作是</h1>
+      <div data-role="header"><a href="index.html" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-home">回到首页</a>
+        <h1 id="nodeTitle">世界上最早的天文学著作是</h1><a href="javascript:xiayiti()" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-arrow-r">下一题</a>
       </div>
       <div data-role="main" class="ui-content"><p>世界上最早的天文学著作是《______》。世界上第一位测量子午线的人是______。</p>
 
@@ -22,22 +22,22 @@
           <fieldset data-role="controlgroup">
             <legend>选项：</legend>
           </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A">
-          <label for="field_choice_a">A 石氏星经   邹衍</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B">
-          <label for="field_choice_b">B 论衡       祖冲之</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C">
-          <label for="field_choice_c">C 开元占经   张衡</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D">
-          <label for="field_choice_d">D 甘石星经   僧一行</label>
-          <div data-role="collapsible">
+          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
+          <label for="field_choice_a" choice="A" class="field_choice">A 石氏星经   邹衍</label>
+          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
+          <label for="field_choice_b" choice="B" class="field_choice">B 论衡       祖冲之</label>
+          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
+          <label for="field_choice_c" choice="C" class="field_choice">C 开元占经   张衡</label>
+          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
+          <label for="field_choice_d" choice="D" class="field_choice">D 甘石星经   僧一行</label>
+          <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
               <p>正确答案：D</p>
               <div>本题考查中国古代史的知识。《甘石星经》是世界上最早的天文学著作。战国时期楚人甘德、魏人石申各写出一部天文学著作。后人把这两部著作合起来，称为《甘石星经》。</div>
             </div>
           </div>
-        </form><a href="javascript:xiayiti()" class="ui-btn">下一题</a>
+        </form>
       </div>
       <script src="../main_danxuan.js"></script>
     </div>

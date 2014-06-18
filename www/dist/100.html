@@ -13,8 +13,8 @@
   </head>
   <body>
     <div data-role="page">
-      <div data-role="header">
-        <h1 id="nodeTitle">某次认知能力测试，刘强得了118分</h1>
+      <div data-role="header"><a href="index.html" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-home">回到首页</a>
+        <h1 id="nodeTitle">某次认知能力测试，刘强得了118分</h1><a href="javascript:xiayiti()" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-arrow-r">下一题</a>
       </div>
       <div data-role="main" class="ui-content"><p>某次认知能力测试，刘强得了118分，蒋明的得分比王丽高，张华和刘强的得分之和大于蒋明和王丽的得分之和，刘强的得分比周梅高：此次测试120分以上为优秀，五人之中有两人没有达到优秀。<br />
 根据以上信息，以下哪项是上述五人在此次测试中得分由高到低的排列？</p>
@@ -23,15 +23,15 @@
           <fieldset data-role="controlgroup">
             <legend>选项：</legend>
           </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A">
-          <label for="field_choice_a">A 张华、王丽、周梅、蒋明、刘强</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B">
-          <label for="field_choice_b">B 张华、蒋明、王丽、刘强、周梅</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C">
-          <label for="field_choice_c">C 张华、蒋明、刘强、王丽、周梅</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D">
-          <label for="field_choice_d">D 蒋明、张华、王丽、刘强、周梅</label>
-          <div data-role="collapsible">
+          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
+          <label for="field_choice_a" choice="A" class="field_choice">A 张华、王丽、周梅、蒋明、刘强</label>
+          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
+          <label for="field_choice_b" choice="B" class="field_choice">B 张华、蒋明、王丽、刘强、周梅</label>
+          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
+          <label for="field_choice_c" choice="C" class="field_choice">C 张华、蒋明、刘强、王丽、周梅</label>
+          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
+          <label for="field_choice_d" choice="D" class="field_choice">D 蒋明、张华、王丽、刘强、周梅</label>
+          <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
               <p>正确答案：B</p>
@@ -39,7 +39,7 @@
 由①④⑤得，刘强>周梅，且分数都小于120分，而蒋明、张华、王丽分数都在120分以上，排除A、C；又由③得，张华分数最高，再由②得，张华>蒋明>王丽>刘强>周梅，即B项。</div>
             </div>
           </div>
-        </form><a href="javascript:xiayiti()" class="ui-btn">下一题</a>
+        </form>
       </div>
       <script src="../main_danxuan.js"></script>
     </div>

@@ -13,8 +13,8 @@
   </head>
   <body>
     <div data-role="page">
-      <div data-role="header">
-        <h1 id="nodeTitle">汽车保险公司的统计数据显示</h1>
+      <div data-role="header"><a href="index.html" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-home">回到首页</a>
+        <h1 id="nodeTitle">汽车保险公司的统计数据显示</h1><a href="javascript:xiayiti()" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-arrow-r">下一题</a>
       </div>
       <div data-role="main" class="ui-content"><p>汽车保险公司的统计数据显示：在所处理的汽车被盗索赔案中，安装自动防盗系统汽车的比例明显低于未安装此种系统的汽车，这说明，安装自动防盗系统能明显减少汽车被盗的风险。但警察局的统计数据却显示：在报案的被盗汽车中，安装自动防盗系统的比例高于未安装此种系统的汽车。这说明，安装自动防盗系统不能减少汽车被盗的风险。<br />
 以下哪项如果为真，最有利于解释上述看来矛盾的统计结果？</p>
@@ -23,22 +23,22 @@
           <fieldset data-role="controlgroup">
             <legend>选项：</legend>
           </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A">
-          <label for="field_choice_a">A 许多安装了自动防盗系统的汽车车主不再购买汽车被盗保险。</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B">
-          <label for="field_choice_b">B 有些未安装自动防盗系统的汽车被盗后，车主报案但未索赔。</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C">
-          <label for="field_choice_c">C 安装自动防盗系统的汽车大都档次较高；汽车的档次越高，越易成为盗窃的对象。</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D">
-          <label for="field_choice_d">D 汽车失盗后，车主一般先到警察局报案，再去保险公司索赔。</label>
-          <div data-role="collapsible">
+          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
+          <label for="field_choice_a" choice="A" class="field_choice">A 许多安装了自动防盗系统的汽车车主不再购买汽车被盗保险。</label>
+          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
+          <label for="field_choice_b" choice="B" class="field_choice">B 有些未安装自动防盗系统的汽车被盗后，车主报案但未索赔。</label>
+          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
+          <label for="field_choice_c" choice="C" class="field_choice">C 安装自动防盗系统的汽车大都档次较高；汽车的档次越高，越易成为盗窃的对象。</label>
+          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
+          <label for="field_choice_d" choice="D" class="field_choice">D 汽车失盗后，车主一般先到警察局报案，再去保险公司索赔。</label>
+          <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
               <p>正确答案：A</p>
               <div>如果A项为真，则说明，许多安装了自动防盗系统的被盗汽车失主并未购买汽车被盗保险，他们会去警察局报案，但不会去保险公司索赔。这有说服力地解释了题干看来矛盾的统计结果。</div>
             </div>
           </div>
-        </form><a href="javascript:xiayiti()" class="ui-btn">下一题</a>
+        </form>
       </div>
       <script src="../main_danxuan.js"></script>
     </div>

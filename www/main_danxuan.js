@@ -26,4 +26,23 @@ xiayiti = function(){
     }
 }
 
+showAnswer = function ()
+{
+    $(".input_choice").attr("disabled","disabled");
+    var nid = window.localStorage.currentNid;
+    var node = gct2014.nodes[nid];
+    var correctAnswer = node.field__xuan_xiang.und[0].value;
+    var selectedAnswer = $(this).attr("choice");
+    console.log("selectedAnswer",selectedAnswer,"correctAnswer",correctAnswer);
+    if (correctAnswer != selectedAnswer)
+    {
+        $(this).addClass("ui-icon-delete ui-btn-b ui-shadow");
+    }
+    $(".field_choice[choice='" + correctAnswer + "']").addClass("ui-icon-check ui-shadow");
+    $(".correctAnswer").collapsible({ collapsed: false });
+    //$(this).checkboxradio( "refresh" );
+}
+
+$(document).on("click",".field_choice",showAnswer);
+
 $(document).on("pagecontainershow",updateTitle);

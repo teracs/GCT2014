@@ -13,8 +13,8 @@
   </head>
   <body>
     <div data-role="page">
-      <div data-role="header">
-        <h1 id="nodeTitle">下面一段话有两种标点法，请指出哪一种是完全正确的：</h1>
+      <div data-role="header"><a href="index.html" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-home">回到首页</a>
+        <h1 id="nodeTitle">下面一段话有两种标点法，请指出哪一种是完全正确的：</h1><a href="javascript:xiayiti()" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-arrow-r">下一题</a>
       </div>
       <div data-role="main" class="ui-content"><p>下面一段话有两种标点法，请指出哪一种是完全正确的： 让我们捧起一把泥土来仔细端详吧( )这是我们的土地呵( )怎样保卫每一寸土地呢( )怎样 使每一寸土地都发挥它的巨大潜力( )一天天更加美好起来呢( )党正在领导着我们前进( )青春的 大地好像发出巨大的声音( )要求全国人民都作出回答(   )</p>
 
@@ -22,22 +22,22 @@
           <fieldset data-role="controlgroup">
             <legend>选项：</legend>
           </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A">
-          <label for="field_choice_a">A ，。?，?。，。</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B">
-          <label for="field_choice_b">B !!?，?。，。 </label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C">
-          <label for="field_choice_c">C !。?，?，，。</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D">
-          <label for="field_choice_d">D !!?，?，，。</label>
-          <div data-role="collapsible">
+          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
+          <label for="field_choice_a" choice="A" class="field_choice">A ，。?，?。，。</label>
+          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
+          <label for="field_choice_b" choice="B" class="field_choice">B !!?，?。，。 </label>
+          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
+          <label for="field_choice_c" choice="C" class="field_choice">C !。?，?，，。</label>
+          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
+          <label for="field_choice_d" choice="D" class="field_choice">D !!?，?，，。</label>
+          <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
               <p>正确答案：B</p>
               <div>本题考查标点符号的运用。前两句是感叹句，应填感叹号；“党正在领导着我们前进”后应为 句号，故选B 项。</div>
             </div>
           </div>
-        </form><a href="javascript:xiayiti()" class="ui-btn">下一题</a>
+        </form>
       </div>
       <script src="../main_danxuan.js"></script>
     </div>

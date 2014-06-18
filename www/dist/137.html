@@ -13,8 +13,8 @@
   </head>
   <body>
     <div data-role="page">
-      <div data-role="header">
-        <h1 id="nodeTitle">Traveling around Venus</h1>
+      <div data-role="header"><a href="index.html" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-home">回到首页</a>
+        <h1 id="nodeTitle">Traveling around Venus</h1><a href="javascript:xiayiti()" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-arrow-r">下一题</a>
       </div>
       <div data-role="main" class="ui-content"><p>Traveling around Venus in a straight way, you would have a long trip of about _______ miles.</p>
 
@@ -22,15 +22,15 @@
           <fieldset data-role="controlgroup">
             <legend>选项：</legend>
           </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A">
-          <label for="field_choice_a">A 24,896</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B">
-          <label for="field_choice_b">B 23,613</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C">
-          <label for="field_choice_c">C 37,994</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D">
-          <label for="field_choice_d">D 25,000,000</label>
-          <div data-role="collapsible">
+          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
+          <label for="field_choice_a" choice="A" class="field_choice">A 24,896</label>
+          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
+          <label for="field_choice_b" choice="B" class="field_choice">B 23,613</label>
+          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
+          <label for="field_choice_c" choice="C" class="field_choice">C 37,994</label>
+          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
+          <label for="field_choice_d" choice="D" class="field_choice">D 25,000,000</label>
+          <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
               <p>正确答案：B</p>
@@ -38,7 +38,7 @@
 </div>
             </div>
           </div>
-        </form><a href="javascript:xiayiti()" class="ui-btn">下一题</a>
+        </form>
       </div>
       <script src="../main_danxuan.js"></script>
     </div>

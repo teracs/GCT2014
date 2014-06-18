@@ -4,27 +4,28 @@ html
   body
     div(data-role="page")
       div(data-role="header")
+        a.ui-btn-left.ui-btn.ui-btn-inline.ui-corner-all.ui-btn-icon-home(href="index.html") 回到首页
         h1#nodeTitle=node.title
-      div.ui-content(data-role="main") !{node.body.und[0].safe_value}
+        a.ui-btn-right.ui-btn.ui-btn-inline.ui-corner-all.ui-btn-icon-arrow-r(href="javascript:xiayiti()") 下一题
+      div.ui-content(data-role="main") !{node.body.und[0].safe_value.replace("/sites/default/files","../img")}
         form
           fieldset(data-role="controlgroup")
             legend 选项：
           -if (node.field_choice_a.und)
-            input#field_choice_a(type="radio",name="field_choice",value="A")
-            label(for="field_choice_a") A !{node.field_choice_a.und[0].value}
+            input#field_choice_a.input_choice(type="radio",name="field_choice",value="A")
+            label.field_choice(for="field_choice_a",choice="A") A !{node.field_choice_a.und[0].value}
           -if (node.field_choice_b.und)
-            input#field_choice_b(type="radio",name="field_choice",value="B")
-            label(for="field_choice_b") B !{node.field_choice_b.und[0].value}
+            input#field_choice_b.input_choice(type="radio",name="field_choice",value="B")
+            label.field_choice(for="field_choice_b",choice="B") B !{node.field_choice_b.und[0].value}
           -if (node.field_choice_c.und)
-            input#field_choice_c(type="radio",name="field_choice",value="C")
-            label(for="field_choice_c") C !{node.field_choice_c.und[0].value}
+            input#field_choice_c.input_choice(type="radio",name="field_choice",value="C")
+            label.field_choice(for="field_choice_c",choice="C") C !{node.field_choice_c.und[0].value}
           -if (node.field_choice_d.und)
-            input#field_choice_d(type="radio",name="field_choice",value="D")
-            label(for="field_choice_d") D !{node.field_choice_d.und[0].value}
-          div(data-role="collapsible")
+            input#field_choice_d.input_choice(type="radio",name="field_choice",value="D")
+            label.field_choice(for="field_choice_d",choice="D") D !{node.field_choice_d.und[0].value}
+          div.correctAnswer(data-role="collapsible")
             h4 查看正确答案
             div
               p 正确答案：!{node.field__xuan_xiang.und[0].value}
               div !{node.field_analysis.und? node.field_analysis.und[0].value: ""}
-        a(href="javascript:xiayiti()",class="ui-btn") 下一题
       script(src="../main_danxuan.js")
