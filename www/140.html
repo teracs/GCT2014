@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=device-dpi">
+    <link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.mobile-1.4.2/jquery-1.11.0.min.js"></script>
+    <script src="underscore-min.js"></script>
+    <script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script src="timuLoader.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header"><a href="index.html" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-home">回到首页</a>
+        <h1 id="nodeTitle">We can learn</h1><a href="javascript:xiayiti()" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-arrow-r">下一题</a>
+      </div>
+      <div data-role="main" class="ui-content"><p>We can learn from the passage that_______.</p>
+
+        <form>
+          <fieldset data-role="controlgroup">
+            <legend>选项：</legend>
+          </fieldset>
+          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
+          <label for="field_choice_a" choice="A" class="field_choice">A Venus is always the last to appear in the sky in the evening</label>
+          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
+          <label for="field_choice_b" choice="B" class="field_choice">B Venus is sometimes the last to appear in the sky in the morning</label>
+          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
+          <label for="field_choice_c" choice="C" class="field_choice">C Venus is sometimes the last to disappear in the eastern sky in the morning</label>
+          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
+          <label for="field_choice_d" choice="D" class="field_choice">D Venus is sometimes the last to disappear in the western sky in the morning</label>
+          <div data-role="collapsible" class="correctAnswer">
+            <h4>查看正确答案</h4>
+            <div>
+              <p>正确答案：C</p>
+              <div><p>本题的关键是逐项确认选项内容，找出一个与其依据句意思完全一致的选项。在此处，c选项与其依据句（第2段第2个句子：At other times，it is the last planet or star that can be seen in the eastem sky in the morning.)意思一致，所以为正确答案。其他选项找不到与其意思完全一致的依据句，属于错误信息。</p>
+</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script src="main_danxuan.js"></script>
+    </div>
+  </body>
+</html>

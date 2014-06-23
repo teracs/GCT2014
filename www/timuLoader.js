@@ -1,7 +1,7 @@
 // 在GCT2014下载入载入所有的题目、科目、知识点，以及当前状态等信息
 if(!window.gct2014)
 {
-    $.getJSON("../record/taxonomy_vocabulary/getTree/2.json", function(taxonomy_vocabulary){
+    $.getJSON("record/taxonomy_vocabulary/getTree/2.json", function(taxonomy_vocabulary){
         window.gct2014 = {flat:{},nested:{},nodes:{}};
         window.taxonomy_vocabulary = taxonomy_vocabulary;
         console.log("载入科目、知识点成功！数量：", taxonomy_vocabulary.length);
@@ -43,7 +43,7 @@ if(!window.gct2014)
             }
         }
         //......................................................................
-        $.getJSON("../record/node.json", function(nodes){
+        $.getJSON("record/node.json", function(nodes){
             window.gct2014.timuIndex = nodes;
             var afterLoad = _.after(nodes.length, function(){
                 for(var i in gct2014.flat)
@@ -54,7 +54,7 @@ if(!window.gct2014)
             });
             for(var i in nodes)
             {
-                $.getJSON("../record/node/"+nodes[i].nid + ".json", function(node)
+                $.getJSON("record/node/"+nodes[i].nid + ".json", function(node)
                 {
                     try{
                         var km = node.field_suoshuzhishidian.und[0].tid;

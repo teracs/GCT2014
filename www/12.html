@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=device-dpi">
+    <link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.mobile-1.4.2/jquery-1.11.0.min.js"></script>
+    <script src="underscore-min.js"></script>
+    <script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script src="timuLoader.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header"><a href="index.html" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-home">回到首页</a>
+        <h1 id="nodeTitle">下列关于民事权利的表述哪一个是错误的? </h1><a href="javascript:xiayiti()" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-arrow-r">下一题</a>
+      </div>
+      <div data-role="main" class="ui-content"><p>下列关于民事权利的表述哪一个是错误的?</p>
+
+        <form>
+          <fieldset data-role="controlgroup">
+            <legend>选项：</legend>
+          </fieldset>
+          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
+          <label for="field_choice_a" choice="A" class="field_choice">A 抵销权是一种形成权 </label>
+          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
+          <label for="field_choice_b" choice="B" class="field_choice">B 知识产权是一种支配权 </label>
+          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
+          <label for="field_choice_c" choice="C" class="field_choice">C 债权请求权不具有排他性 </label>
+          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
+          <label for="field_choice_d" choice="D" class="field_choice">D 支配权不存在对应义务 </label>
+          <div data-role="collapsible" class="correctAnswer">
+            <h4>查看正确答案</h4>
+            <div>
+              <p>正确答案：D</p>
+              <div>本题考查民法知识。依据民事权利的不同效力，可将民事权利分为：支配权、形成权，请求权、抗辩权。支配权是对权利客体进行直接的排他性支配并享有其利益的权利。支配权的实现不需要对应人的积极义务，但存在容忍义务。</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script src="main_danxuan.js"></script>
+    </div>
+  </body>
+</html>

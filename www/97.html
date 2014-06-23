@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=device-dpi">
+    <link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.mobile-1.4.2/jquery-1.11.0.min.js"></script>
+    <script src="underscore-min.js"></script>
+    <script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script src="timuLoader.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header"><a href="index.html" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-home">回到首页</a>
+        <h1 id="nodeTitle">郑兵的孩子即将上高中</h1><a href="javascript:xiayiti()" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-arrow-r">下一题</a>
+      </div>
+      <div data-role="main" class="ui-content"><p>郑兵的孩子即将上高中，郑兵发现，在当地中学，学生与老师的比例低的学校。学生的高考成绩普遍都比较好，郑兵因此决定，让他的孩子选择学生总人数最少的学校就读。 以下哪项最为恰当地指出了郑兵上述决定的漏洞?</p>
+
+        <form>
+          <fieldset data-role="controlgroup">
+            <legend>选项：</legend>
+          </fieldset>
+          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
+          <label for="field_choice_a" choice="A" class="field_choice">A 忽略了学校教学质量既和学生与老师的比例有关，也和生源质量有关</label>
+          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
+          <label for="field_choice_b" choice="B" class="field_choice">B 仅注重高考成绩，忽略了孩子的全面发展</label>
+          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
+          <label for="field_choice_c" choice="C" class="field_choice">C 不当地假设：学生总人数少就意味着学生与老师的比例低</label>
+          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
+          <label for="field_choice_d" choice="D" class="field_choice">D 在考虑孩子的教育时忽略了孩子本人的愿望</label>
+          <div data-role="collapsible" class="correctAnswer">
+            <h4>查看正确答案</h4>
+            <div>
+              <p>正确答案：C</p>
+              <div>题干论点：让他的孩子选择学生总人数最少的学校就读。论据：学生与老师的比例低的学校，学生的高考成绩普遍都比较好。逻辑关系：学生总人数少就意味着学生与老师的比例低。A项对论据削弱，即教学质量除了和学生与老师的比例有关还和生源质量有关。C项直接断开论点和论据的逻辑关系，直接指出了郑兵的漏洞。</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script src="main_danxuan.js"></script>
+    </div>
+  </body>
+</html>

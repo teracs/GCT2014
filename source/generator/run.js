@@ -43,7 +43,7 @@ var callback_Menu = function(err, res){
         //console.log("我们得到了嵌套的目录：",menu);
         var html = jade.renderFile("index.jade",{menu:menu,pretty:true});
         //console.log("生成了目录HTML：",html);
-        fs.writeFile(config.wwwPath + "dist/index.html",html,function(err,data){
+        fs.writeFile(config.wwwPath + "index.html",html,function(err,data){
             if(!err)
             {
                 console.log("生成了index.html");
@@ -75,7 +75,7 @@ var callback_Node = function(err, res)
         var html = jade.renderFile("node_danxuan.jade",{node:node,pretty:true});
       else
         var html = jade.renderFile("node.jade",{node:node,pretty:true});
-      fs.writeFile(config.wwwPath + "dist/"+ node.nid +".html",html,function(err,data){
+      fs.writeFile(config.wwwPath + ""+ node.nid +".html",html,function(err,data){
         if(!err)
         {
             console.log("#"+node.nid,node.title);
