@@ -1,18 +1,39 @@
 doctype html
 html
-  include header.jade
-  body
-    div(data-role="page")
-      div(data-role="header")
-        h1 GCT2014
-      div.ui-content(data-role="main")
-        ul.ui-listview-outer(data-role="listview")
-          -for(var i in menu)
-              li(data-role="collapsible",data-iconpos="right",data-shadow="false",data-corners="false")
-                h2= menu[i].name
-                -for(var j in menu[i].children)
-                  ul(data-role="listview",data-shadow="false",data-inset="true",data-corners="false")
-                    li(id="zsd_"+menu[i].children[j].tid)
-                      a(tid=menu[i].children[j].tid,href="javascript:gotoZSD(" +menu[i].tid + "," + menu[i].children[j].tid + ")",class="zhishidian",zhishidian=menu[i].children[j].tid)= menu[i].children[j].name
-                        |<span class="ui-li-count">0</span>
-        script(src="main.js")
+    // 这里是首页，是用户进入的第一个页面。
+    // 假定用户总是从这里进入，并且用户没有别的入口
+    include header_index.jade
+    body
+        div(data-role="header",data-theme="a")
+            a.ui-btn-left.ui-btn.ui-btn-inline.ui-mini.ui-corner-all.ui-btn-icon-left.ui-icon-grid(href="#mypanel") 菜单
+            h1#title GCT2014
+         #mypanel(data-role="panel",data-display="overlay",data-theme="b")
+            ul(data-role="listview")
+                li
+                    a(href="../index/index.html") 首页
+                li
+                    a(href="../tiku/index.html") GCT题库
+        div(data-role="page")
+            欢迎来到GCT题库！
+    script(src="../main.js")
+    
+
+  //
+    include header.jade
+    body
+      div(data-role="page")
+        div(data-role="header")
+          a.ui-btn-left.ui-btn.ui-btn-inline.ui-mini.ui-corner-all.ui-btn-icon-left.ui-icon-grid(href="#mypanel") 菜单
+          h1 GCT2014
+        div.ui-content(data-role="main")
+          ul.ui-listview-outer(data-role="listview")
+            -for(var i in menu)
+                li(data-role="collapsible",data-iconpos="right",data-shadow="false",data-corners="false")
+                  h2= menu[i].name
+                  -for(var j in menu[i].children)
+                    ul(data-role="listview",data-shadow="false",data-inset="true",data-corners="false")
+                      li(id="zsd_"+menu[i].children[j].tid)
+                        a(tid=menu[i].children[j].tid,href="javascript:gotoZSD(" +menu[i].tid + "," + menu[i].children[j].tid + ")",class="zhishidian",zhishidian=menu[i].children[j].tid)= menu[i].children[j].name
+                          |<span class="ui-li-count">0</span>
+        
+      script(src="main.js")

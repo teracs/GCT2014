@@ -41,9 +41,9 @@ var callback_Menu = function(err, res){
           }
         }
         //console.log("我们得到了嵌套的目录：",menu);
-        var html = jade.renderFile("index.jade",{menu:menu,pretty:true});
+        var html = jade.renderFile("tiku.jade",{menu:menu,pretty:true});
         //console.log("生成了目录HTML：",html);
-        fs.writeFile(config.wwwPath + "index.html",html,function(err,data){
+        fs.writeFile(config.wwwPath + "tiku/index.html",html,function(err,data){
             if(!err)
             {
                 console.log("生成了index.html");
@@ -75,7 +75,7 @@ var callback_Node = function(err, res)
         var html = jade.renderFile("node_danxuan.jade",{node:node,pretty:true});
       else
         var html = jade.renderFile("node.jade",{node:node,pretty:true});
-      fs.writeFile(config.wwwPath + ""+ node.nid +".html",html,function(err,data){
+      fs.writeFile(config.wwwPath + "tiku/"+ node.nid +".html",html,function(err,data){
         if(!err)
         {
             console.log("#"+node.nid,node.title);
@@ -115,6 +115,16 @@ var callback_Nodes = function(err, res)
   }
 }
 ////////////////////////////////////////////////////////////////////////////////
+var html = jade.renderFile("index.jade",{pretty:true});
+//console.log("生成了目录HTML：",html);
+fs.writeFile(config.wwwPath + "index/index.html",html,function(err,data){
+    if(!err)
+    {
+        console.log("生成了index.html");
+    }
+});
+
+
 fs.readFile(config.wwwPath + "record/taxonomy_vocabulary/getTree/2.json",callback_Menu);
 fs.readFile(config.wwwPath + "record/node.json",callback_Nodes);
 /*
