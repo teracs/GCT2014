@@ -13,16 +13,34 @@
   </head>
   <body>
     <div data-role="page">
-      <div data-role="header">
-        <h1 id="nodeTitle">唐朝诗人李白是唐朝的诗人</h1>
-      </div>
       <div data-role="main" class="ui-content"><p>唐朝诗人李白是唐朝的诗人</p>
-
-        <form>
-          <div>情景题还没做好</div>
-        </form><a href="javascript:xiayiti()" class="ui-btn">下一题</a>
+</div>
+      <h3>小题</h3>
+      <div id="xiaoti" data-role="tabs">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#xiaoti_36">1</a></li>
+            <li><a href="#xiaoti_37">2</a></li>
+          </ul>
+          <div id="xiaoti_36">
+            <div>36.html</div>
+          </div>
+          <div id="xiaoti_37">
+            <div>37.html</div>
+          </div>
+        </div>
       </div>
-      <script src="main_danxuan.js"></script>
+      <div data-role="footer" data-position="fixed" data-fullscreen="true">
+        <fieldset class="ui-grid-a">
+          <div class="ui-block-a">
+            <button onclick="">上一题</button>
+          </div>
+          <div class="ui-block-b">
+            <button onclick="xiayiti();">下一题</button>
+          </div>
+        </fieldset>
+      </div>
+      <script src="../main_danxuan.js"></script>
     </div>
   </body>
 </html>

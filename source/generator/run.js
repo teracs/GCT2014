@@ -81,6 +81,11 @@ var callback_Node = function(err, res)
             console.log("#"+node.nid,node.title);
         }
       });
+      if (node.type == "dan_xuan_ti")
+      {
+        var html = jade.renderFile("node_xiaoti.jade", {node:node, pretty:true});
+        fs.writeFile(config.wwwPath + "tiku/xiaoti_"+ node.nid +".html",html);
+      }
     }
 }
 

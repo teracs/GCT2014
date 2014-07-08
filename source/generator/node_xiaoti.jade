@@ -1,0 +1,38 @@
+doctype html
+html
+  include header_tiku.jade
+  body
+    div(data-role="page")
+      div.ui-content(data-role="main") !{node.body.und[0].safe_value.replace("/sites/default/files","../img")}
+        ul(data-role="listview",data-inset="true")
+          -if (node.field_choice_a.und)
+              li
+                a.selection(href="#",choice="A")
+                    img.answer_pic(src="../img/wenhao.jpg")
+                    h2 A
+                    p.field_choice !{node.field_choice_a.und[0].value == "A" ? "":node.field_choice_a.und[0].value.replace("/sites/default/files","../img")}
+          -if (node.field_choice_b.und)
+              li
+                a.selection(href="#",choice="B")
+                    img.answer_pic(src="../img/wenhao.jpg")
+                    h2 B
+                    p.field_choice !{node.field_choice_b.und[0].value == "B" ? "":node.field_choice_b.und[0].value.replace("/sites/default/files","../img")}
+          -if (node.field_choice_c.und)
+              li
+                a.selection(href="#",choice="C")
+                    img.answer_pic(src="../img/wenhao.jpg")
+                    h2 C
+                    p.field_choice !{node.field_choice_c.und[0].value == "C" ? "":node.field_choice_c.und[0].value.replace("/sites/default/files","../img")}
+          -if (node.field_choice_d.und)
+              li
+                a.selection(href="#",choice="D")
+                    img.answer_pic(src="../img/wenhao.jpg")
+                    h2 D
+                    p.field_choice !{node.field_choice_d.und[0].value == "D" ? "":node.field_choice_d.und[0].value.replace("/sites/default/files","../img")}
+
+          div.correctAnswer(data-role="collapsible")
+            h4 查看正确答案
+            div
+              p 正确答案：!{node.field__xuan_xiang.und[0].value.replace("/sites/default/files","../img")}
+              div !{node.field_analysis.und? node.field_analysis.und[0].value.replace("/sites/default/files","../img"): ""}
+      script(src="../main_danxuan.js")

@@ -3,7 +3,7 @@ html
   include header_tiku.jade
   body
     div(data-role="page")
-      div.ui-content(data-role="main") !{node.body.und[0].safe_value.replace("/sites/default/files","../img")}
+      div.ui-content(data-role="main") !{node.body.und[0].safe_value.replace("/sites/default/files","../img").replace("\n","<br/>")}
         ul(data-role="listview",data-inset="true")
           -if (node.field_choice_a.und)
               li

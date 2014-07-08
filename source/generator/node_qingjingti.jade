@@ -3,10 +3,21 @@ html
   include header.jade
   body
     div(data-role="page")
-      div(data-role="header")
-        h1#nodeTitle=node.title
-      div.ui-content(data-role="main") !{node.body.und[0].safe_value}
-        form
-          div 情景题还没做好
-        a(href="javascript:xiayiti()",class="ui-btn") 下一题
-      script(src="main_danxuan.js")
+      div.ui-content(data-role="main") !{node.body.und[0].safe_value.replace("/sites/default/files","../img")}
+      h3 小题
+      #xiaoti(data-role="tabs")
+          div(data-role="navbar",data-ajax=false)
+            ul
+              - for(var i in node.field_xiaoti.und)
+                  li
+                    a(href="#xiaoti_" + node.field_xiaoti.und[i]["nid"]) !{parseInt(i)+1}
+            - for(var i in node.field_xiaoti.und)
+                div(id="xiaoti_" + node.field_xiaoti.und[i]["nid"])
+                    div #{node.field_xiaoti.und[i]["nid"] + ".html"}
+      div(data-role="footer",data-position="fixed",data-fullscreen="true")
+        fieldset.ui-grid-a
+          .ui-block-a
+            button(onclick="") 上一题
+          .ui-block-b
+            button(onclick="xiayiti();") 下一题
+      script(src="../main_danxuan.js")
