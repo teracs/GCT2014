@@ -18,18 +18,19 @@
 小李：老张没参加60米，老王参加了200米。<br />
 如果他们的猜测都对了一半，则以下哪项为真？</p>
 
-        <form>
-          <fieldset data-role="controlgroup">
-            <legend>选项：</legend>
-          </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
-          <label for="field_choice_a" choice="A" class="field_choice">A 老张、老王和老李分别参加200米、100米和 60米</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
-          <label for="field_choice_b" choice="B" class="field_choice">B 老张、老王和老李分别参加60米、200米和100米</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
-          <label for="field_choice_c" choice="C" class="field_choice">C 老张、老王和老李分别参加100米、60米和200米</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
-          <label for="field_choice_d" choice="D" class="field_choice">D 老张、老王和老李分别参加200米、60米和100米</label>
+        <ul data-role="listview" data-inset="true">
+          <li><a href="#" choice="A" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>A</h2>
+              <p class="field_choice">老张、老王和老李分别参加200米、100米和 60米</p></a></li>
+          <li><a href="#" choice="B" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>B</h2>
+              <p class="field_choice">老张、老王和老李分别参加60米、200米和100米</p></a></li>
+          <li><a href="#" choice="C" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>C</h2>
+              <p class="field_choice">老张、老王和老李分别参加100米、60米和200米</p></a></li>
+          <li><a href="#" choice="D" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>D</h2>
+              <p class="field_choice">老张、老王和老李分别参加200米、60米和100米</p></a></li>
           <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
@@ -41,7 +42,7 @@
 </div>
             </div>
           </div>
-        </form>
+        </ul>
       </div>
       <div data-role="footer" data-position="fixed" data-fullscreen="true">
         <fieldset class="ui-grid-a">

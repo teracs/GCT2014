@@ -4,26 +4,37 @@ html
   body
     div(data-role="page")
       div.ui-content(data-role="main") !{node.body.und[0].safe_value.replace("/sites/default/files","../img")}
-        form
-          fieldset(data-role="controlgroup")
-            legend 选项：
+        ul(data-role="listview",data-inset="true")
           -if (node.field_choice_a.und)
-            input#field_choice_a.input_choice(type="radio",name="field_choice",value="A")
-            label.field_choice(for="field_choice_a",choice="A") A !{node.field_choice_a.und[0].value == "A" ? "":node.field_choice_a.und[0].value.replace("/sites/default/files","../img")}
+              li
+                a.selection(href="#",choice="A")
+                    img.answer_pic(src="../img/wenhao.jpg")
+                    h2 A
+                    p.field_choice !{node.field_choice_a.und[0].value == "A" ? "":node.field_choice_a.und[0].value.replace("/sites/default/files","../img")}
           -if (node.field_choice_b.und)
-            input#field_choice_b.input_choice(type="radio",name="field_choice",value="B")
-            label.field_choice(for="field_choice_b",choice="B") B !{node.field_choice_b.und[0].value == "B" ? "" :node.field_choice_b.und[0].value.replace("/sites/default/files","../img")}
+              li
+                a.selection(href="#",choice="B")
+                    img.answer_pic(src="../img/wenhao.jpg")
+                    h2 B
+                    p.field_choice !{node.field_choice_b.und[0].value == "B" ? "":node.field_choice_b.und[0].value.replace("/sites/default/files","../img")}
           -if (node.field_choice_c.und)
-            input#field_choice_c.input_choice(type="radio",name="field_choice",value="C")
-            label.field_choice(for="field_choice_c",choice="C") C !{node.field_choice_c.und[0].value == "C" ? "" :node.field_choice_c.und[0].value.replace("/sites/default/files","../img")}
+              li
+                a.selection(href="#",choice="C")
+                    img.answer_pic(src="../img/wenhao.jpg")
+                    h2 C
+                    p.field_choice !{node.field_choice_c.und[0].value == "C" ? "":node.field_choice_c.und[0].value.replace("/sites/default/files","../img")}
           -if (node.field_choice_d.und)
-            input#field_choice_d.input_choice(type="radio",name="field_choice",value="D")
-            label.field_choice(for="field_choice_d",choice="D") D !{node.field_choice_d.und[0].value == "D" ? "" :node.field_choice_d.und[0].value.replace("/sites/default/files","../img")}
+              li
+                a.selection(href="#",choice="D")
+                    img.answer_pic(src="../img/wenhao.jpg")
+                    h2 D
+                    p.field_choice !{node.field_choice_d.und[0].value == "D" ? "":node.field_choice_d.und[0].value.replace("/sites/default/files","../img")}
+
           div.correctAnswer(data-role="collapsible")
             h4 查看正确答案
             div
               p 正确答案：!{node.field__xuan_xiang.und[0].value.replace("/sites/default/files","../img")}
-              div !{node.field_analysis.und? node.field_analysis.und[0].value: ""}
+              div !{node.field_analysis.und? node.field_analysis.und[0].value.replace("/sites/default/files","../img"): ""}
       div(data-role="footer",data-position="fixed",data-fullscreen="true")
         fieldset.ui-grid-a
           .ui-block-a

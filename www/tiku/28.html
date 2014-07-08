@@ -14,18 +14,19 @@
     <div data-role="page">
       <div data-role="main" class="ui-content"><p>现代教育是以______为基础，以现代社会生活和科学技术为教育内容，以现代技术为教育手段。</p>
 
-        <form>
-          <fieldset data-role="controlgroup">
-            <legend>选项：</legend>
-          </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
-          <label for="field_choice_a" choice="A" class="field_choice">A 市场化的充分发展</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
-          <label for="field_choice_b" choice="B" class="field_choice">B 社会化机器大工业生产</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
-          <label for="field_choice_c" choice="C" class="field_choice">C 现代信息社会的形成</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
-          <label for="field_choice_d" choice="D" class="field_choice">D 国家民主制度的建立 </label>
+        <ul data-role="listview" data-inset="true">
+          <li><a href="#" choice="A" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>A</h2>
+              <p class="field_choice">市场化的充分发展</p></a></li>
+          <li><a href="#" choice="B" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>B</h2>
+              <p class="field_choice">社会化机器大工业生产</p></a></li>
+          <li><a href="#" choice="C" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>C</h2>
+              <p class="field_choice">现代信息社会的形成</p></a></li>
+          <li><a href="#" choice="D" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>D</h2>
+              <p class="field_choice">国家民主制度的建立 </p></a></li>
           <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
@@ -33,7 +34,7 @@
               <div>本题考查教育学知识。社会化机器大工业生产既为现代教育提供了必要的物质技术条件。“市场化的充分发展”不是现代教育的必要条件；“现代信息社会的形成”，“国家民主制度的建立”是随着现代教育的形成而逐步发展 的，因而不是现代教育的基础。</div>
             </div>
           </div>
-        </form>
+        </ul>
       </div>
       <div data-role="footer" data-position="fixed" data-fullscreen="true">
         <fieldset class="ui-grid-a">

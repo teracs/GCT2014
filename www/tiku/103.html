@@ -14,18 +14,19 @@
     <div data-role="page">
       <div data-role="main" class="ui-content"><p>若4种分别属于N，K，L和w的化肥被放在4个连续的袋子内，但不一定按给出的顺序，则下面哪一项一定正确?</p>
 
-        <form>
-          <fieldset data-role="controlgroup">
-            <legend>选项：</legend>
-          </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
-          <label for="field_choice_a" choice="A" class="field_choice">A N和K将位于这一排袋子的两端位置。</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
-          <label for="field_choice_b" choice="B" class="field_choice">B N和L将位于这一排袋子的两端位置。</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
-          <label for="field_choice_c" choice="C" class="field_choice">C N和w不相邻。</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
-          <label for="field_choice_d" choice="D" class="field_choice">D K和L不相邻。</label>
+        <ul data-role="listview" data-inset="true">
+          <li><a href="#" choice="A" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>A</h2>
+              <p class="field_choice">N和K将位于这一排袋子的两端位置。</p></a></li>
+          <li><a href="#" choice="B" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>B</h2>
+              <p class="field_choice">N和L将位于这一排袋子的两端位置。</p></a></li>
+          <li><a href="#" choice="C" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>C</h2>
+              <p class="field_choice">N和w不相邻。</p></a></li>
+          <li><a href="#" choice="D" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>D</h2>
+              <p class="field_choice">K和L不相邻。</p></a></li>
           <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
@@ -33,7 +34,7 @@
               <div>根据上面的分析N只能与W相邻，N必然靠一端。K和N也不相邻，那么这4种化肥只能按N，W，L，K或K，L，W，N的顺序放置，所以N和K必将位于这一排袋子的两端位置。</div>
             </div>
           </div>
-        </form>
+        </ul>
       </div>
       <div data-role="footer" data-position="fixed" data-fullscreen="true">
         <fieldset class="ui-grid-a">

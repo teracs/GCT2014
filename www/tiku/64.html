@@ -14,18 +14,19 @@
     <div data-role="page">
       <div data-role="main" class="ui-content"><p>所有参加此次运动会的选手都是身体强壮的运动员，所有身体强壮的运动员都是很少生病的，但是有一些身体不适的选手参加了此次运动会。以下选项不能从上述前提中得出？</p>
 
-        <form>
-          <fieldset data-role="controlgroup">
-            <legend>选项：</legend>
-          </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
-          <label for="field_choice_a" choice="A" class="field_choice">A 有些身体不适的选手是极少生病的。</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
-          <label for="field_choice_b" choice="B" class="field_choice">B 极少生病的选手都参加了此次运功会。</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
-          <label for="field_choice_c" choice="C" class="field_choice">C 有些极少生病的选手感到身体不适。</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
-          <label for="field_choice_d" choice="D" class="field_choice">D 有些身体强壮的运动员感到身体不适。</label>
+        <ul data-role="listview" data-inset="true">
+          <li><a href="#" choice="A" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>A</h2>
+              <p class="field_choice">有些身体不适的选手是极少生病的。</p></a></li>
+          <li><a href="#" choice="B" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>B</h2>
+              <p class="field_choice">极少生病的选手都参加了此次运功会。</p></a></li>
+          <li><a href="#" choice="C" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>C</h2>
+              <p class="field_choice">有些极少生病的选手感到身体不适。</p></a></li>
+          <li><a href="#" choice="D" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>D</h2>
+              <p class="field_choice">有些身体强壮的运动员感到身体不适。</p></a></li>
           <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
@@ -33,7 +34,7 @@
               <div>本题属于直言命题。 所有参加此的选手都是身体强壮的，身体强壮的运动员都是很少生病，所以所有参加此次运动会的选手都是很少生病的。由此，按直言命题变形推理，我们只能得到“有的极少生病的运动员参加了运动全。”这样只有B选项是不能必然推出的。</div>
             </div>
           </div>
-        </form>
+        </ul>
       </div>
       <div data-role="footer" data-position="fixed" data-fullscreen="true">
         <fieldset class="ui-grid-a">

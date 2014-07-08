@@ -14,18 +14,19 @@
     <div data-role="page">
       <div data-role="main" class="ui-content"><p>下列词语中加下划线的字或词，字形、解释全部正确的一项是：</p>
 
-        <form>
-          <fieldset data-role="controlgroup">
-            <legend>选项：</legend>
-          </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
-          <label for="field_choice_a" choice="A" class="field_choice">A 觥 (指酒杯)筹交错               赫赫(非常显著的样子)有名  横征暴敛 (征税、搜刮)           良莠(恶草，比喻坏人)不齐</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
-          <label for="field_choice_b" choice="B" class="field_choice">B 明察秋毫(比喻极细微的东西)      励精图制 (制度)  乔 (做假)装打扮                 虚 (谦虚)怀若谷</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
-          <label for="field_choice_c" choice="C" class="field_choice">C 强 (勉强)弩之末                无耻之尤 (特别突出的)  无的放矢(箭)                   我行我素 (平素，素常)</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
-          <label for="field_choice_d" choice="D" class="field_choice">D 身 (身体)先士卒                揠 (拔)苗助长  睚眦必报 (报复)                严于律 (约束)已</label>
+        <ul data-role="listview" data-inset="true">
+          <li><a href="#" choice="A" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>A</h2>
+              <p class="field_choice">觥 (指酒杯)筹交错               赫赫(非常显著的样子)有名  横征暴敛 (征税、搜刮)           良莠(恶草，比喻坏人)不齐</p></a></li>
+          <li><a href="#" choice="B" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>B</h2>
+              <p class="field_choice">明察秋毫(比喻极细微的东西)      励精图制 (制度)  乔 (做假)装打扮                 虚 (谦虚)怀若谷</p></a></li>
+          <li><a href="#" choice="C" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>C</h2>
+              <p class="field_choice">强 (勉强)弩之末                无耻之尤 (特别突出的)  无的放矢(箭)                   我行我素 (平素，素常)</p></a></li>
+          <li><a href="#" choice="D" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>D</h2>
+              <p class="field_choice">身 (身体)先士卒                揠 (拔)苗助长  睚眦必报 (报复)                严于律 (约束)已</p></a></li>
           <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
@@ -33,7 +34,7 @@
               <div>本题考查字义知识。B 励精图制(制度)应为励精图治(治理)；C 强弩之末中的“强”应为“强 大”；D 身先士卒中的“身”应为“自己、本身”的意思。</div>
             </div>
           </div>
-        </form>
+        </ul>
       </div>
       <div data-role="footer" data-position="fixed" data-fullscreen="true">
         <fieldset class="ui-grid-a">

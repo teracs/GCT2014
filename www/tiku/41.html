@@ -14,26 +14,28 @@
     <div data-role="page">
       <div data-role="main" class="ui-content"><p>下面列举的历史变革，不属于“原地不动地画圆圈”的一项是：</p>
 
-        <form>
-          <fieldset data-role="controlgroup">
-            <legend>选项：</legend>
-          </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
-          <label for="field_choice_a" choice="A" class="field_choice">A 秦末农民起义——汉政权建立</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
-          <label for="field_choice_b" choice="B" class="field_choice">B 汉末军阀割据——三国鼎立</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
-          <label for="field_choice_c" choice="C" class="field_choice">C 元末农民起义——朱元璋当皇帝</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
-          <label for="field_choice_d" choice="D" class="field_choice">D 孙中山领导辛亥革命——中华民国成立</label>
+        <ul data-role="listview" data-inset="true">
+          <li><a href="#" choice="A" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>A</h2>
+              <p class="field_choice">秦末农民起义——汉政权建立</p></a></li>
+          <li><a href="#" choice="B" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>B</h2>
+              <p class="field_choice">汉末军阀割据——三国鼎立</p></a></li>
+          <li><a href="#" choice="C" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>C</h2>
+              <p class="field_choice">元末农民起义——朱元璋当皇帝</p></a></li>
+          <li><a href="#" choice="D" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>D</h2>
+              <p class="field_choice">孙中山领导辛亥革命——中华民国成立</p></a></li>
           <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
               <p>正确答案：D</p>
-              <div>A、B、C三项都是在封建体制内“一乱一治”的历史循环，属于原地画圆圈；中华民国却是建立了共和制，推翻了封建统治制度，因此选D</div>
+              <div><p>A、B、C三项都是在封建体制内“一乱一治”的历史循环，属于原地画圆圈；中华民国却是建立了共和制，推翻了封建统治制度，因此选D</p>
+</div>
             </div>
           </div>
-        </form>
+        </ul>
       </div>
       <div data-role="footer" data-position="fixed" data-fullscreen="true">
         <fieldset class="ui-grid-a">

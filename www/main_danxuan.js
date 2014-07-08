@@ -28,7 +28,7 @@ xiayiti = function(){
 
 showAnswer = function ()
 {
-    $(".input_choice").disableSelection();
+    console.log(this);
     var nid = window.localStorage.currentNid;
     var node = gct2014.nodes[nid];
     var correctAnswer = node.field__xuan_xiang.und[0].value;
@@ -36,14 +36,15 @@ showAnswer = function ()
     console.log("selectedAnswer",selectedAnswer,"correctAnswer",correctAnswer);
     if (correctAnswer != selectedAnswer)
     {
-        $(this).addClass("ui-icon-delete ui-btn-b ui-shadow");
+        $(this).children(".answer_pic").attr("src","../img/incorrect.jpg");
     }
-    $(".field_choice[choice='" + correctAnswer + "']").addClass("ui-icon-check ui-shadow");
+    //$(".answer_pic").attr("src","../img/incorrect.jpg");
+    $("[choice='" + correctAnswer + "']").children(".answer_pic").attr("src","../img/correct.png");
     $(".correctAnswer").collapsible({ collapsed: false });
     //$(this).checkboxradio( "refresh" );
 }
 
 //$(".input_choice").on("change",function(){showAnswer.call($(this).parent())});
-$(".input_choice").on("click",function(){showAnswer.call($(this).prev())});
+$(".selection").on("click", showAnswer);
 
 $(document).on("pagecontainershow",updateTitle);

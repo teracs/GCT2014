@@ -6,7 +6,7 @@
         "safe_summary": "", 
         "format": "filtered_html", 
         "safe_value": "<p>\u6839\u636e\u539f\u6587\u6240\u7ed9\u4fe1\u606f\uff0c\u4ee5\u4e0b\u63a8\u65ad\u6b63\u786e\u7684\u4e00\u9879\u662f\uff1a</p>\n", 
-        "value": "\u6839\u636e\u539f\u6587\u6240\u7ed9\u4fe1\u606f\uff0c\u4ee5\u4e0b\u63a8\u65ad\u6b63\u786e\u7684\u4e00\u9879\u662f\uff1a", 
+        "value": "<p>\u6839\u636e\u539f\u6587\u6240\u7ed9\u4fe1\u606f\uff0c\u4ee5\u4e0b\u63a8\u65ad\u6b63\u786e\u7684\u4e00\u9879\u662f\uff1a</p>\r\n", 
         "summary": ""
       }
     ]
@@ -69,15 +69,9 @@
   "uid": "3", 
   "vid": "61", 
   "sticky": "0", 
-  "revision_timestamp": "1398264485", 
+  "revision_timestamp": "1403757835", 
   "field_suoshuzhishidian": {
     "und": [
-      {
-        "tid": "1"
-      }, 
-      {
-        "tid": "8"
-      }, 
       {
         "tid": "9"
       }
@@ -139,12 +133,12 @@
   }, 
   "language": "und", 
   "created": "1398264485", 
-  "changed": "1398264485", 
+  "changed": "1403757835", 
   "field_analysis": {
     "und": [
       {
         "safe_value": "<p>\u4ece\u7b2c\u4e09\u81ea\u7136\u6bb5\u7684\u5185\u5bb9\u53ef\u4ee5\u4f5c\u51fa\u9009\u62e9\u3002</p>\n", 
-        "value": "\u4ece\u7b2c\u4e09\u81ea\u7136\u6bb5\u7684\u5185\u5bb9\u53ef\u4ee5\u4f5c\u51fa\u9009\u62e9\u3002", 
+        "value": "<p>\u4ece\u7b2c\u4e09\u81ea\u7136\u6bb5\u7684\u5185\u5bb9\u53ef\u4ee5\u4f5c\u51fa\u9009\u62e9\u3002</p>\r\n", 
         "format": "filtered_html"
       }
     ]

@@ -6,7 +6,7 @@
         "safe_summary": "", 
         "format": "filtered_html", 
         "safe_value": "<p>\u7b2c\u4e8c\u81ea\u7136\u6bb5\u5f00\u5934\u8bf4\uff1a\u201c\u6ca1\u6709\u627e\u5230\u753b\u5bb6\uff0c\u627e\u5230\u4e86\u753b\u3002\u201d\u8fd9\u91cc\u7684\u201c\u753b\u201d\u6307\u7684\u662f______</p>\n", 
-        "value": "\u7b2c\u4e8c\u81ea\u7136\u6bb5\u5f00\u5934\u8bf4\uff1a\u201c\u6ca1\u6709\u627e\u5230\u753b\u5bb6\uff0c\u627e\u5230\u4e86\u753b\u3002\u201d\u8fd9\u91cc\u7684\u201c\u753b\u201d\u6307\u7684\u662f______", 
+        "value": "<p>\u7b2c\u4e8c\u81ea\u7136\u6bb5\u5f00\u5934\u8bf4\uff1a\u201c\u6ca1\u6709\u627e\u5230\u753b\u5bb6\uff0c\u627e\u5230\u4e86\u753b\u3002\u201d\u8fd9\u91cc\u7684\u201c\u753b\u201d\u6307\u7684\u662f______</p>\r\n", 
         "summary": ""
       }
     ]
@@ -69,15 +69,9 @@
   "uid": "3", 
   "vid": "52", 
   "sticky": "0", 
-  "revision_timestamp": "1398263595", 
+  "revision_timestamp": "1403757604", 
   "field_suoshuzhishidian": {
     "und": [
-      {
-        "tid": "1"
-      }, 
-      {
-        "tid": "8"
-      }, 
       {
         "tid": "9"
       }
@@ -139,12 +133,12 @@
   }, 
   "language": "und", 
   "created": "1398263595", 
-  "changed": "1398263595", 
+  "changed": "1403757604", 
   "field_analysis": {
     "und": [
       {
         "safe_value": "<p>\u6b64\u6587\u662f\u5199\u83b2\uff0cA\u3001B\u4e24\u9879\u53ea\u662f\u83b2\u7684\u753b\u9762\u7684\u80cc\u666f\uff0cC\u9879\u53ea\u662f\u4ea4\u5f85\u8fc7\u7a0b\uff0c\u4e0d\u662f\u753b\u9762\uff0c\u56e0\u6b64\u9009D\u3002</p>\n", 
-        "value": "\u6b64\u6587\u662f\u5199\u83b2\uff0cA\u3001B\u4e24\u9879\u53ea\u662f\u83b2\u7684\u753b\u9762\u7684\u80cc\u666f\uff0cC\u9879\u53ea\u662f\u4ea4\u5f85\u8fc7\u7a0b\uff0c\u4e0d\u662f\u753b\u9762\uff0c\u56e0\u6b64\u9009D\u3002", 
+        "value": "<p>\u6b64\u6587\u662f\u5199\u83b2\uff0cA\u3001B\u4e24\u9879\u53ea\u662f\u83b2\u7684\u753b\u9762\u7684\u80cc\u666f\uff0cC\u9879\u53ea\u662f\u4ea4\u5f85\u8fc7\u7a0b\uff0c\u4e0d\u662f\u753b\u9762\uff0c\u56e0\u6b64\u9009D\u3002</p>\r\n", 
         "format": "filtered_html"
       }
     ]

@@ -6,7 +6,7 @@
         "safe_summary": "", 
         "format": "filtered_html", 
         "safe_value": "<p>\u6839\u636e\u6587\u610f\uff0c\u76f4\u63a5\u5f62\u6210\u592a\u9633\u7cfb\u7684\u662f\uff1a</p>\n", 
-        "value": "\u6839\u636e\u6587\u610f\uff0c\u76f4\u63a5\u5f62\u6210\u592a\u9633\u7cfb\u7684\u662f\uff1a", 
+        "value": "<p>\u6839\u636e\u6587\u610f\uff0c\u76f4\u63a5\u5f62\u6210\u592a\u9633\u7cfb\u7684\u662f\uff1a</p>\r\n", 
         "summary": ""
       }
     ]
@@ -69,15 +69,9 @@
   "uid": "3", 
   "vid": "49", 
   "sticky": "0", 
-  "revision_timestamp": "1398263378", 
+  "revision_timestamp": "1403244184", 
   "field_suoshuzhishidian": {
     "und": [
-      {
-        "tid": "1"
-      }, 
-      {
-        "tid": "8"
-      }, 
       {
         "tid": "9"
       }
@@ -87,7 +81,7 @@
   "log": "", 
   "title": "\u6839\u636e\u6587\u610f\uff0c\u76f4\u63a5\u5f62\u6210\u592a\u9633\u7cfb\u7684\u662f\uff1a", 
   "comment_count": "0", 
-  "revision_uid": "3", 
+  "revision_uid": "1", 
   "translate": "0", 
   "type": "dan_xuan_ti", 
   "status": "1", 
@@ -139,12 +133,12 @@
   }, 
   "language": "und", 
   "created": "1398263378", 
-  "changed": "1398263378", 
+  "changed": "1403244184", 
   "field_analysis": {
     "und": [
       {
         "safe_value": "<p>\u672c\u9898\u8003\u67e5\u5bf9\u6587\u610f\u7684\u7406\u89e3\u3002\u6587\u4e2d\u6700\u540e\u4e00\u53e5\u6709\u201c\u5f62\u6210\u592a\u9633\u7cfb\u7684\u90a3\u4e2a\u7403\u72b6\u4f53\uff0c\u6211\u4eec\u79f0\u5b83\u4e3a\u592a\u9633\u661f\u4e91\u3002\u201d\u7684\u5185\u5bb9\u3002\u5176\u4ed6\u4e09\u9879\u5747\u4e0d\u76f4\u63a5\u5f62\u6210\u592a\u9633\u7cfb\u3002</p>\n", 
-        "value": "\u672c\u9898\u8003\u67e5\u5bf9\u6587\u610f\u7684\u7406\u89e3\u3002\u6587\u4e2d\u6700\u540e\u4e00\u53e5\u6709\u201c\u5f62\u6210\u592a\u9633\u7cfb\u7684\u90a3\u4e2a\u7403\u72b6\u4f53\uff0c\u6211\u4eec\u79f0\u5b83\u4e3a\u592a\u9633\u661f\u4e91\u3002\u201d\u7684\u5185\u5bb9\u3002\u5176\u4ed6\u4e09\u9879\u5747\u4e0d\u76f4\u63a5\u5f62\u6210\u592a\u9633\u7cfb\u3002", 
+        "value": "<p>\u672c\u9898\u8003\u67e5\u5bf9\u6587\u610f\u7684\u7406\u89e3\u3002\u6587\u4e2d\u6700\u540e\u4e00\u53e5\u6709\u201c\u5f62\u6210\u592a\u9633\u7cfb\u7684\u90a3\u4e2a\u7403\u72b6\u4f53\uff0c\u6211\u4eec\u79f0\u5b83\u4e3a\u592a\u9633\u661f\u4e91\u3002\u201d\u7684\u5185\u5bb9\u3002\u5176\u4ed6\u4e09\u9879\u5747\u4e0d\u76f4\u63a5\u5f62\u6210\u592a\u9633\u7cfb\u3002</p>\r\n", 
         "format": "filtered_html"
       }
     ]

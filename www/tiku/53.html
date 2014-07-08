@@ -14,26 +14,28 @@
     <div data-role="page">
       <div data-role="main" class="ui-content"><p>第三自然段中使用了三个“联想”，这样写目的是什么：</p>
 
-        <form>
-          <fieldset data-role="controlgroup">
-            <legend>选项：</legend>
-          </fieldset>
-          <input id="field_choice_a" type="radio" name="field_choice" value="A" class="input_choice">
-          <label for="field_choice_a" choice="A" class="field_choice">A 以水仙比喻莲，水生的花没有比她更为飘逸，更富灵气的了。</label>
-          <input id="field_choice_b" type="radio" name="field_choice" value="B" class="input_choice">
-          <label for="field_choice_b" choice="B" class="field_choice">B 借引神话传说中的美女形象，盛赞莲是美、爱和神综合的象征。</label>
-          <input id="field_choice_c" type="radio" name="field_choice" value="C" class="input_choice">
-          <label for="field_choice_c" choice="C" class="field_choice">C 说明莲的美是不容否认的，一花一世界，没有什么花比莲更自成世界了。</label>
-          <input id="field_choice_d" type="radio" name="field_choice" value="D" class="input_choice">
-          <label for="field_choice_d" choice="D" class="field_choice">D 说明莲的美实在只是一种境界，今乃皆备于莲的一身。</label>
+        <ul data-role="listview" data-inset="true">
+          <li><a href="#" choice="A" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>A</h2>
+              <p class="field_choice">以水仙比喻莲，水生的花没有比她更为飘逸，更富灵气的了。</p></a></li>
+          <li><a href="#" choice="B" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>B</h2>
+              <p class="field_choice">借引神话传说中的美女形象，盛赞莲是美、爱和神综合的象征。</p></a></li>
+          <li><a href="#" choice="C" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>C</h2>
+              <p class="field_choice">说明莲的美是不容否认的，一花一世界，没有什么花比莲更自成世界了。</p></a></li>
+          <li><a href="#" choice="D" class="selection"><img src="../img/wenhao.jpg" class="answer_pic">
+              <h2>D</h2>
+              <p class="field_choice">说明莲的美实在只是一种境界，今乃皆备于莲的一身。</p></a></li>
           <div data-role="collapsible" class="correctAnswer">
             <h4>查看正确答案</h4>
             <div>
               <p>正确答案：B</p>
-              <div>“由于水生，她令人联想巫峡和洛水”，借巫峡的女神和洛水的洛神赞莲为神和爱的象征； "联想华清池的‘芙蓉如面’, 联想来自水乡而终隐于水的西子”，则是借引杨贵妃和西施的形象赞莲之美。因此选B。</div>
+              <div><p>“由于水生，她令人联想巫峡和洛水”，借巫峡的女神和洛水的洛神赞莲为神和爱的象征； "联想华清池的‘芙蓉如面’, 联想来自水乡而终隐于水的西子”，则是借引杨贵妃和西施的形象赞莲之美。因此选B。</p>
+</div>
             </div>
           </div>
-        </form>
+        </ul>
       </div>
       <div data-role="footer" data-position="fixed" data-fullscreen="true">
         <fieldset class="ui-grid-a">
