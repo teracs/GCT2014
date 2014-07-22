@@ -5,8 +5,8 @@
       {
         "safe_summary": "", 
         "format": "filtered_html", 
-        "safe_value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/image006.png\" /></p>\n", 
-        "value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/image006.png\" style=\"height:122px; width:507px\" /></p>\r\n", 
+        "safe_value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/41.jpg\" /></p>\n", 
+        "value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/41.jpg\" style=\"height:165px; width:348px\" /></p>\r\n", 
         "summary": ""
       }
     ]
@@ -69,7 +69,7 @@
   "uid": "3", 
   "vid": "124", 
   "sticky": "0", 
-  "revision_timestamp": "1399801505", 
+  "revision_timestamp": "1405316825", 
   "field_suoshuzhishidian": {
     "und": [
       {
@@ -136,12 +136,12 @@
   }, 
   "language": "und", 
   "created": "1399801505", 
-  "changed": "1399801505", 
+  "changed": "1405316825", 
   "field_analysis": {
     "und": [
       {
-        "safe_value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/image007.png\" /></p>\n", 
-        "value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/image007.png\" style=\"height:107px; width:511px\" /></p>\r\n", 
+        "safe_value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/42.jpg\" /></p>\n", 
+        "value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/42.jpg\" style=\"height:200px; width:511px\" /></p>\r\n", 
         "format": "filtered_html"
       }
     ]

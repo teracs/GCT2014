@@ -5,8 +5,8 @@
       {
         "safe_summary": "", 
         "format": "filtered_html", 
-        "safe_value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/image003.png\" /></p>\n", 
-        "value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/image003.png\" style=\"height:61px; width:476px\" /></p>\r\n", 
+        "safe_value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/21.jpg\" /></p>\n", 
+        "value": "<p><img alt=\"\" src=\"/sites/default/files/gct2014/21.jpg\" style=\"height:74px; width:403px\" /></p>\r\n", 
         "summary": ""
       }
     ]
@@ -69,7 +69,7 @@
   "uid": "3", 
   "vid": "122", 
   "sticky": "0", 
-  "revision_timestamp": "1399801077", 
+  "revision_timestamp": "1405315109", 
   "field_suoshuzhishidian": {
     "und": [
       {
@@ -136,7 +136,7 @@
   }, 
   "language": "und", 
   "created": "1399801077", 
-  "changed": "1399801077", 
+  "changed": "1405315109", 
   "field_analysis": {
     "und": [
       {
