@@ -6,7 +6,7 @@
         "safe_summary": "", 
         "format": "filtered_html", 
         "safe_value": "<p>\u4e0b\u9762\u54ea\u4e00\u9879\u4e00\u5b9a\u6b63\u786e?</p>\n", 
-        "value": "\u4e0b\u9762\u54ea\u4e00\u9879\u4e00\u5b9a\u6b63\u786e?", 
+        "value": "<p>\u4e0b\u9762\u54ea\u4e00\u9879\u4e00\u5b9a\u6b63\u786e?</p>\r\n", 
         "summary": ""
       }
     ]
@@ -69,15 +69,9 @@
   "uid": "3", 
   "vid": "109", 
   "sticky": "0", 
-  "revision_timestamp": "1398409786", 
+  "revision_timestamp": "1405327882", 
   "field_suoshuzhishidian": {
     "und": [
-      {
-        "tid": "3"
-      }, 
-      {
-        "tid": "17"
-      }, 
       {
         "tid": "9"
       }
@@ -139,12 +133,12 @@
   }, 
   "language": "und", 
   "created": "1398409786", 
-  "changed": "1398409786", 
+  "changed": "1405327882", 
   "field_analysis": {
     "und": [
       {
         "safe_value": "<p>D\u591a\u4e8eC\uff0cC\u591a\u4e8eQ\uff0c\u6240\u4ee5D\u5f97\u5230\u7684\u70b9\u51fb\u6bd4Q\u5927\u662f\u4e00\u5b9a\u6b63\u786e\u7684\u3002</p>\n", 
-        "value": "D\u591a\u4e8eC\uff0cC\u591a\u4e8eQ\uff0c\u6240\u4ee5D\u5f97\u5230\u7684\u70b9\u51fb\u6bd4Q\u5927\u662f\u4e00\u5b9a\u6b63\u786e\u7684\u3002", 
+        "value": "<p>D\u591a\u4e8eC\uff0cC\u591a\u4e8eQ\uff0c\u6240\u4ee5D\u5f97\u5230\u7684\u70b9\u51fb\u6bd4Q\u5927\u662f\u4e00\u5b9a\u6b63\u786e\u7684\u3002</p>\r\n", 
         "format": "filtered_html"
       }
     ]

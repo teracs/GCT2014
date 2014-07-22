@@ -6,7 +6,7 @@
         "safe_summary": "", 
         "format": "filtered_html", 
         "safe_value": "<p>\u4e0b\u5217\u5404\u7ec4\u8bcd\u8bed\u4e2d\uff0c\u6ca1\u6709\u9519\u522b\u5b57\u7684\u4e00\u7ec4\u662f\uff1a</p>\n", 
-        "value": "\u4e0b\u5217\u5404\u7ec4\u8bcd\u8bed\u4e2d\uff0c\u6ca1\u6709\u9519\u522b\u5b57\u7684\u4e00\u7ec4\u662f\uff1a", 
+        "value": "<p>\u4e0b\u5217\u5404\u7ec4\u8bcd\u8bed\u4e2d\uff0c\u6ca1\u6709\u9519\u522b\u5b57\u7684\u4e00\u7ec4\u662f\uff1a</p>\r\n", 
         "summary": ""
       }
     ]
@@ -69,7 +69,7 @@
   "uid": "3", 
   "vid": "3", 
   "sticky": "0", 
-  "revision_timestamp": "1397877033", 
+  "revision_timestamp": "1405312753", 
   "field_suoshuzhishidian": {
     "und": [
       {
@@ -101,43 +101,48 @@
   "field_choice_a": {
     "und": [
       {
-        "value": "\u8e0a\u8dc3 \u59cb\u4f5c\u52c7\u8005 \u4f18\u5f02 \u6028\u5929\u5c24\u4eba ", 
-        "format": null
+        "safe_value": "<p>\u8e0a\u8dc3          \u59cb\u4f5c\u52c7\u8005          \u4f18\u5f02          \u6028\u5929\u5c24\u4eba</p>\n", 
+        "value": "\u8e0a\u8dc3          \u59cb\u4f5c\u52c7\u8005          \u4f18\u5f02          \u6028\u5929\u5c24\u4eba ", 
+        "format": "filtered_html"
       }
     ]
   }, 
   "field_choice_c": {
     "und": [
       {
-        "value": "\u4f27\u4fc3 \u6ca7\u6d77\u6851\u7530 \u607b\u9690 \u4fa7\u76ee\u800c\u89c6", 
-        "format": null
+        "safe_value": "<p>\u4f27\u4fc3          \u6ca7\u6d77\u6851\u7530          \u607b\u9690          \u4fa7\u76ee\u800c\u89c6</p>\n", 
+        "value": "\u4f27\u4fc3          \u6ca7\u6d77\u6851\u7530          \u607b\u9690          \u4fa7\u76ee\u800c\u89c6", 
+        "format": "filtered_html"
       }
     ]
   }, 
   "field_choice_b": {
     "und": [
       {
-        "value": "\u8ffd\u6eaf \u6eaf\u6d41\u6c42\u6e90 \u806a\u6167 \u62fe\u4eba\u7259\u6167", 
-        "format": null
+        "safe_value": "<p>\u8ffd\u6eaf          \u6eaf\u6d41\u6c42\u6e90          \u806a\u6167          \u62fe\u4eba\u7259\u6167</p>\n", 
+        "value": "\u8ffd\u6eaf          \u6eaf\u6d41\u6c42\u6e90          \u806a\u6167          \u62fe\u4eba\u7259\u6167", 
+        "format": "filtered_html"
       }
     ]
   }, 
   "field_choice_d": {
     "und": [
       {
-        "value": "\u6f84\u6f88 \u91cd\u8e48\u8986\u8f99 \u9707\u8361 \u632f\u8033\u6b32\u804b", 
-        "format": null
+        "safe_value": "<p>\u6f84\u6f88          \u91cd\u8e48\u8986\u8f99          \u9707\u8361          \u632f\u8033\u6b32\u804b</p>\n", 
+        "value": "\u6f84\u6f88          \u91cd\u8e48\u8986\u8f99          \u9707\u8361          \u632f\u8033\u6b32\u804b", 
+        "format": "filtered_html"
       }
     ]
   }, 
   "language": "und", 
   "created": "1397877033", 
-  "changed": "1397877033", 
+  "changed": "1405312753", 
   "field_analysis": {
     "und": [
       {
-        "value": "\u672c\u9898\u8003\u67e5\u9519\u522b\u5b57\u3002A\u201c\u59cb\u4f5c\u52c7\u8005\u201d\u5e94\u4e3a\u201c\u59cb\u4f5c\u4fd1\u8005\u201d\uff1bC\u201c\u4f27\u4fc3\u201d\u5e94\u4e3a\u201c\u4ed3\u4fc3\u201d\uff1bD\u201c\u632f\u8033\u6b32 \u804b\u201d\u5e94\u4e3a\u201c\u9707\u8033\u6b32\u804b\u201d\u3002", 
-        "format": null
+        "safe_value": "<p>\u672c\u9898\u8003\u67e5\u9519\u522b\u5b57\u3002A\u201c\u59cb\u4f5c\u52c7\u8005\u201d\u5e94\u4e3a\u201c\u59cb\u4f5c\u4fd1\u8005\u201d\uff1bC\u201c\u4f27\u4fc3\u201d\u5e94\u4e3a\u201c\u4ed3\u4fc3\u201d\uff1bD\u201c\u632f\u8033\u6b32 \u804b\u201d\u5e94\u4e3a\u201c\u9707\u8033\u6b32\u804b\u201d\u3002</p>\n", 
+        "value": "<p>\u672c\u9898\u8003\u67e5\u9519\u522b\u5b57\u3002A\u201c\u59cb\u4f5c\u52c7\u8005\u201d\u5e94\u4e3a\u201c\u59cb\u4f5c\u4fd1\u8005\u201d\uff1bC\u201c\u4f27\u4fc3\u201d\u5e94\u4e3a\u201c\u4ed3\u4fc3\u201d\uff1bD\u201c\u632f\u8033\u6b32 \u804b\u201d\u5e94\u4e3a\u201c\u9707\u8033\u6b32\u804b\u201d\u3002</p>\r\n", 
+        "format": "filtered_html"
       }
     ]
   }, 

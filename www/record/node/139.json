@@ -69,14 +69,11 @@
   "uid": "3", 
   "vid": "139", 
   "sticky": "0", 
-  "revision_timestamp": "1402383938", 
+  "revision_timestamp": "1405326096", 
   "field_suoshuzhishidian": {
     "und": [
       {
-        "tid": "4"
-      }, 
-      {
-        "tid": "23"
+        "tid": "9"
       }
     ]
   }, 
@@ -136,7 +133,7 @@
   }, 
   "language": "und", 
   "created": "1402383938", 
-  "changed": "1402383938", 
+  "changed": "1405326096", 
   "field_analysis": {
     "und": [
       {
