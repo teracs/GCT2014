@@ -1,9 +1,9 @@
 doctype html
 html
-  include header.jade
+  include header_tiku.jade
   body
     div(data-role="page")
-      div.ui-content(data-role="main") !{node.body.und[0].safe_value.replace("/sites/default/files","../img")}
+      div.qingjingti_content.ui-content(data-role="main") !{node.body.und[0].safe_value.replace("/sites/default/files","../img")}
       h3 小题
       #xiaoti(data-role="tabs")
           div(data-role="navbar",data-ajax=false)
@@ -12,12 +12,13 @@ html
                   li
                     a(href="#xiaoti_" + node.field_xiaoti.und[i]["nid"]) !{parseInt(i)+1}
             - for(var i in node.field_xiaoti.und)
-                div(id="xiaoti_" + node.field_xiaoti.und[i]["nid"])
+                div.xiaoti(id="xiaoti_" + node.field_xiaoti.und[i]["nid"])
                     div #{node.field_xiaoti.und[i]["nid"] + ".html"}
       div(data-role="footer",data-position="fixed",data-fullscreen="true")
         fieldset.ui-grid-a
           .ui-block-a
-            button(onclick="") 上一题
+            button(onclick="shangyiti()") 上一题
           .ui-block-b
             button(onclick="xiayiti();") 下一题
-      script(src="../main_danxuan.js")
+      script(src="../main_qingjingti.js")
+      script(src="../redirect_index.js")

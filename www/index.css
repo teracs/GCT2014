@@ -41,3 +41,8 @@ html {
 .ui-li-static.ui-collapsible > .ui-collapsible-content {
     border-left-width: 0;
 }
+
+.qingjingti_content{
+    max-height: 300px;
+    overflow: scroll;
+}

@@ -4,7 +4,7 @@ if(!window.gct2014)
     $.getJSON("../record/taxonomy_vocabulary/getTree/2.json", function(taxonomy_vocabulary){
         window.gct2014 = {flat:{},nested:{},nodes:{}};
         window.taxonomy_vocabulary = taxonomy_vocabulary;
-        console.log("载入科目、知识点成功！数量：", taxonomy_vocabulary.length);
+        //console.log("载入科目、知识点成功！数量：", taxonomy_vocabulary.length);
         //......................................................................
         for (var h in taxonomy_vocabulary)
         {
@@ -13,10 +13,10 @@ if(!window.gct2014)
             t.nodes = [];
             t.parent = null;
             t.children = {};
-            console.log("载入科目/知识点：", t.name, t);
+            //console.log("载入科目/知识点：", t.name, t);
             //..................................................................
         }
-        console.log("........................................................");
+        //console.log("........................................................");
         //......................................................................
         for (var i in taxonomy_vocabulary)
         {
@@ -24,10 +24,10 @@ if(!window.gct2014)
             if(t.depth == 0)
             {
                 window.gct2014.nested[t.tid] = t;
-                console.log("    载入科目：", t.name, t);
+                //console.log("    载入科目：", t.name, t);
             }
         }
-        console.log("........................................................");
+        //console.log("........................................................");
         //......................................................................
         for (var i in taxonomy_vocabulary)
         {
@@ -37,9 +37,9 @@ if(!window.gct2014)
                 var pid = parseInt(t.parents[0]);
                 window.gct2014.nested[pid].children[t.tid] = t;
                 t.parent = pid;
-                console.log(
-                    "        载入知识点： ", window.gct2014.flat[pid].name + "/" + t.name,
-                t);
+                //console.log(
+                //    "        载入知识点： ", window.gct2014.flat[pid].name + "/" + t.name,
+                //t);
             }
         }
         //......................................................................
@@ -65,17 +65,17 @@ if(!window.gct2014)
             {
                 $.getJSON("../record/node/"+nodes[i].nid + ".json", function(node)
                 {
-                    try{
-                        var km = node.field_suoshuzhishidian.und[0].tid;
-                        var zsd = node.field_suoshuzhishidian.und[1].tid;
-                        console.log(
-                            "            载入题目：" + window.gct2014.flat[km].name + "/" + window.gct2014.flat[zsd].name + "/" + node.nid,
-                            node
-                        );
-                        gct2014.flat[km].nodes.push(node);
-                        gct2014.flat[zsd].nodes.push(node);
+                    //try{
+                        var km = node.field_suoshuzhishidian && node.field_suoshuzhishidian.und && node.field_suoshuzhishidian.und[0] && node.field_suoshuzhishidian.und[0].tid;
+                        var zsd = node.field_suoshuzhishidian && node.field_suoshuzhishidian.und && node.field_suoshuzhishidian.und[1] && node.field_suoshuzhishidian.und[1].tid;
+                        //console.log(
+                            //"            载入题目：" + window.gct2014.flat[km].name + "/" + window.gct2014.flat[zsd].name + "/" + node.nid,
+                            //node
+                        //);
+                        if (km && gct2014.flat[km]) gct2014.flat[km].nodes.push(node);
+                        if (zsd&& gct2014.flat[zsd]) gct2014.flat[zsd].nodes.push(node);
                         gct2014.nodes[node.nid] = node;
-                    }catch(e){}
+                    //}catch(e){}
                 }).always(function(){
                         afterLoad();
                     });

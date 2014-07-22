@@ -9,11 +9,10 @@
     <script src="../jquery.mobile-1.4.2/jquery-1.11.0.min.js"></script>
     <script src="../underscore-min.js"></script>
     <script src="../jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
-    <script src="../timuLoader.js"></script>
   </head>
   <body>
     <div data-role="page">
-      <div data-role="main" class="ui-content"><p>一网站评选网络之星，初赛选出7个候选人赵(Z)、钱(Q)、孙(S)、李(L)、吴(w)、陈C.和董D.，在网上进行决赛，根据这7位选手个人主页被点击的多少来给他们排名次。结果，每一个选手的点击量都不相同。网友评选结果如下：<br />
+      <div data-role="main" class="qingjingti_content ui-content"><p>一网站评选网络之星，初赛选出7个候选人赵(Z)、钱(Q)、孙(S)、李(L)、吴(w)、陈C.和董D.，在网上进行决赛，根据这7位选手个人主页被点击的多少来给他们排名次。结果，每一个选手的点击量都不相同。网友评选结果如下：<br />
 Z得到的点击量比C的大；<br />
 C得到的点击量比Q的大；<br />
 Q得到的点击量比L的大；<br />
@@ -30,19 +29,19 @@ D得到的点击量比S的小，但是比W得到的大，也比C的大。</p>
             <li><a href="#xiaoti_111">4</a></li>
             <li><a href="#xiaoti_112">5</a></li>
           </ul>
-          <div id="xiaoti_108">
+          <div id="xiaoti_108" class="xiaoti">
             <div>108.html</div>
           </div>
-          <div id="xiaoti_109">
+          <div id="xiaoti_109" class="xiaoti">
             <div>109.html</div>
           </div>
-          <div id="xiaoti_110">
+          <div id="xiaoti_110" class="xiaoti">
             <div>110.html</div>
           </div>
-          <div id="xiaoti_111">
+          <div id="xiaoti_111" class="xiaoti">
             <div>111.html</div>
           </div>
-          <div id="xiaoti_112">
+          <div id="xiaoti_112" class="xiaoti">
             <div>112.html</div>
           </div>
         </div>
@@ -50,14 +49,15 @@ D得到的点击量比S的小，但是比W得到的大，也比C的大。</p>
       <div data-role="footer" data-position="fixed" data-fullscreen="true">
         <fieldset class="ui-grid-a">
           <div class="ui-block-a">
-            <button onclick="">上一题</button>
+            <button onclick="shangyiti()">上一题</button>
           </div>
           <div class="ui-block-b">
             <button onclick="xiayiti();">下一题</button>
           </div>
         </fieldset>
       </div>
-      <script src="../main_danxuan.js"></script>
+      <!--script(src="../main_qingjingti.js")-->
+      <!--script(src="../redirect_index.js")-->
     </div>
   </body>
 </html>
