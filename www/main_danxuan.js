@@ -25,6 +25,20 @@ xiayiti = function(){
         $.mobile.changePage("index.html");
     }
 }
+shangyiti = function(){
+    dijidao = parseInt(window.localStorage.currentDijidao);
+    dijidao -= 1;
+    if (dijidao < window.localStorage.currentZSDLength)
+    {
+        window.localStorage.currentDijidao = dijidao;
+        var nid = window.localStorage.currentNid = gct2014.flat[window.localStorage.currentZid].nodes[dijidao].nid;
+        $.mobile.changePage(nid + ".html");
+    }
+    else
+    {
+        $.mobile.changePage("index.html");
+    }
+}
 
 showAnswer = function ()
 {
@@ -46,5 +60,6 @@ showAnswer = function ()
 
 //$(".input_choice").on("change",function(){showAnswer.call($(this).parent())});
 $(".selection").on("click", showAnswer);
-
+$("body").on("swipeleft", xiayiti);
+$("body").on("swiperight", shangyiti);
 $(document).on("pagecontainershow",updateTitle);
