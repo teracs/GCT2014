@@ -10,10 +10,18 @@ checkCorrect = function(){
     var node = gct2014.nodes[nid];
     //////////////////////////////
 }
-
+var ts = 0;
 xiayiti = function(){
     dijidao = parseInt(window.localStorage.currentDijidao);
-    dijidao += 1;
+    if ( new Date() > ts + 1000)
+    {
+        dijidao += 1;
+        ts = new Date();
+    }
+    else
+    {
+        return;
+    }
     if (dijidao < window.localStorage.currentZSDLength)
     {
         window.localStorage.currentDijidao = dijidao;
@@ -27,7 +35,19 @@ xiayiti = function(){
 }
 shangyiti = function(){
     dijidao = parseInt(window.localStorage.currentDijidao);
-    dijidao -= 1;
+    if ( new Date() > ts + 1000)
+    {
+        dijidao -= 1;
+        if (dijidao < 0){
+            dijidao = 0;
+            return;
+        }
+        ts = new Date();
+    }
+    else
+    {
+        return;
+    }
     if (dijidao < window.localStorage.currentZSDLength)
     {
         window.localStorage.currentDijidao = dijidao;
@@ -60,6 +80,9 @@ showAnswer = function ()
 
 //$(".input_choice").on("change",function(){showAnswer.call($(this).parent())});
 $(".selection").on("click", showAnswer);
-$("body").on("swipeleft", xiayiti);
-$("body").on("swiperight", shangyiti);
+if (!gct2014.swipebinded){
+    $("body").on("swipeleft", xiayiti);
+    $("body").on("swiperight", shangyiti);
+    gct2014.swipebinded =true;
+}
 $(document).on("pagecontainershow",updateTitle);
