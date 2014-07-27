@@ -63,3 +63,8 @@ $(".selection").on("click", showAnswer);
 $("body").on("swipeleft", xiayiti);
 $("body").on("swiperight", shangyiti);
 $(document).on("pagecontainershow",updateTitle);
+var deleteFuck = function ()
+{
+    $("#welcome").remove();
+};
+$(document).on("pagecontainershow",deleteFuck);
